@@ -7,11 +7,10 @@ jobs:
     tests:
         name : Tests
         runs-on: ubuntu-latest
-
         steps:
             - name : check out code 
               uses: actions/checkout@v6
             - name: check go lang code 
               uses: actions/setup-go@v6
             - name: fix the error # force failure
-              run : go version
+              run : go test ./...
