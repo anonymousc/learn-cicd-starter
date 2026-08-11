@@ -14,5 +14,5 @@ jobs:
               uses: actions/setup-go@v6
             - name: fix the error # force failure
               run : go test -cover ./...
-            - name: test
+            - name: Style
               run: test -z $(go fmt ./...)
