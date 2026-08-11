@@ -13,5 +13,5 @@ jobs:
               uses: actions/checkout@v6
             - name: check go lang code 
               uses: actions/setup-go@v6
-            - name: force failure
-              run : asdasd
+            - name: fix the error # force failure
+              run : go version
