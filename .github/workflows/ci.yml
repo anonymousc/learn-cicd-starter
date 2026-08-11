@@ -1,0 +1,17 @@
+name: ci
+
+on:
+    pull_request:
+        branches : [main]
+jobs:
+    tests:
+        name : Tests
+        runs-on: ubuntu-latest
+
+        steps:
+            - name : check out code 
+              uses: actions/checkout@6
+            - name: check go lang code 
+              uses: actions/setup-go@6
+            - name: force failure
+              run : asdasd
